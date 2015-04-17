@@ -1,0 +1,19 @@
+application: myapp
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /images
+  static_dir: static/2r2.ca/images
+
+- url: /thermographie
+  static_dir: static/2r2.ca/thermographie
+
+- url: /thermography
+  static_dir: static/2r2.ca/thermography
+
+- url: /
+  static_files: static/2r2.ca/index.html
+  upload: static/2r2.ca/index.html
